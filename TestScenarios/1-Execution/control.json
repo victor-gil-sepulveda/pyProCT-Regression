@@ -1,0 +1,21 @@
+/*
+Workspace and scheduler creation.
+*/
+
+{
+    "global":{
+        "control": {
+            "scheduler_type": "Serial"
+        },
+        "workspace": {
+            "base": "clustering"
+            // All folders can be specified
+            // ,
+            // "tmp": "tmp",
+            // "matrix": "matrix",
+            // "clusterings": "clusterings",
+            // "results": "results
+        }
+    }
+
+}

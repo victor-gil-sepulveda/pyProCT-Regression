@@ -1,0 +1,29 @@
+{
+    "global":{
+        "control": {
+            "scheduler_type": "Serial"
+        },
+        "workspace": {
+            "base": "clustering",
+            "matrix": "../matrix_rmsd"
+        }
+    },
+    "data":{
+        "type": "protein::ensemble",
+        
+        "files":[
+            "Structures/conformations.lst"
+	],
+            
+        "matrix":{
+            "method": "rmsd::ensemble",
+            "parameters": {
+                "type": "COORDINATES",
+		"fit_selection": "backbone"
+            },
+            "image": {
+                "filename": "matrix_plot"
+            }
+        }
+    }
+}

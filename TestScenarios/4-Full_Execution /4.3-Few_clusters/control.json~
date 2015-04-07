@@ -1,0 +1,99 @@
+{
+    "global":{
+        "control": {
+            "scheduler_type": "Serial"
+        },
+        "workspace": {
+            "base": "clustering",
+            "matrix": "matrix"
+        }
+    },
+    "data":{
+        "type": "protein::ensemble",
+        
+        "files":[
+            "pdb_list_4.lst"
+            ],
+            
+        "matrix":{
+            "method": "rmsd::ensemble",
+            "parameters": {
+                "calculator_type": "QCP_OMP_CALCULATOR",
+		"fit_selection": "chain A",
+                "calc_selection": "chain B and name CA",
+                "chain_map": false
+            },
+            "filename":"matrix",
+            "image": {
+                "filename": "matrix_plot"
+            }
+        }
+    },
+    "clustering": {
+        "generation": {
+            "method": "generate"
+        },
+        "algorithms": {
+            "dbscan": {},
+            "gromos": {
+                "max": 15
+            },
+            "kmedoids": {
+                "max": 15
+            },
+            "hierarchical": {}
+        },
+        "evaluation": {
+            "maximum_noise": 0,
+            "evaluation_criteria": {
+                "criteria_0": {
+                    "Silhouette": {
+                        "action": ">",
+                        "weight": 3
+                    },
+                    "Cohesion": {
+                        "action": ">",
+                        "weight": 2
+                    }
+                }
+            },
+            "minimum_cluster_size": 1,
+            "query_types": [
+                "NumClusters",
+                "NoiseLevel",
+                "MeanClusterSize"
+            ],
+            "maximum_clusters": 50,
+            "minimum_clusters": 1
+        }
+    },
+    "postprocess": {
+        "rmsf": {
+        },
+        "representatives": {
+            "keep_remarks": true,
+            "keep_frame_number": false
+        },
+        "pdb_clusters": {
+            "keep_remarks": false,
+            "keep_frame_number": true
+        },
+        
+        "cluster_stats":{},
+        
+        "atomic_distances":{
+            "distances":{
+                "distance 1":{
+                    "from": "chain B and resid 6 and name CB" , 
+                    "to": "chain A and resid 148 and name C"
+                },
+                "distance 2":{
+                    "from": "chain B " , 
+                    "to": "chain A and resid 148 and name C"
+                }
+            }
+        }
+        
+    }
+}
+

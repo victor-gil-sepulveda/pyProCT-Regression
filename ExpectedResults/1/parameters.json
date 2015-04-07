@@ -1,0 +1,20 @@
+{
+    "global": {
+        "control": {
+            "scheduler_type": "Serial"
+        },
+        "workspace": {
+            "tmp": "tmp",
+            "matrix": "matrix",
+            "parameters": { //jarl
+                "clear_after_exec": [
+                    "tmp"
+                ],
+                "overwrite": true
+            },
+            "results": "results",
+            "base": "/home/victor/Escritorio/pyProCT-Regression/clustering",
+            "clusters": "clusters"
+        }
+    }
+}

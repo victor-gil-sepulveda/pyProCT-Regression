@@ -1,0 +1,17 @@
+cluster_0, distance 2, 18.503, 17.469, 
+cluster_0, distance 1, 15.603, 15.664, 
+cluster_1, distance 2, 24.615, 
+cluster_1, distance 1, 46.429, 
+cluster_2, distance 2, 25.604, 
+cluster_2, distance 1, 13.460, 
+
+
+cluster id, distance id, avg, std
+cluster_0, distance 2, 21.548, 3.597 
+cluster_0, distance 1, 22.789, 13.677 
+cluster id, distance id, avg, std
+cluster_1, distance 2, 21.548, 3.597 
+cluster_1, distance 1, 22.789, 13.677 
+cluster id, distance id, avg, std
+cluster_2, distance 2, 21.548, 3.597 
+cluster_2, distance 1, 22.789, 13.677 

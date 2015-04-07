@@ -1,0 +1,186 @@
+{
+    "best_clustering": "clustering_0000",
+    "created_files": [
+        {
+            "path": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/5-Evaluation/5.1-All_metrics/clustering/results/parameters.json",
+            "type": "text",
+            "description": "Parameters file"
+        },
+        {
+            "path": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/5-Evaluation/5.1-All_metrics/clustering/matrix/statistics.json",
+            "type": "text",
+            "description": "Matrix statistics"
+        },
+        {
+            "path": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/5-Evaluation/5.1-All_metrics/clustering/results/per_cluster_stats.csv",
+            "type": "text",
+            "description": "Stats for all clusterings (diameter and distances from center)"
+        },
+        {
+            "path": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/5-Evaluation/5.1-All_metrics/clustering/results/clusters.tar.gz",
+            "type": "compressed_pdb",
+            "description": "Clusters"
+        },
+        {
+            "path": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/5-Evaluation/5.1-All_metrics/clustering/results/representatives.pdb",
+            "type": "pdb",
+            "description": "Cluster representatives"
+        },
+        {
+            "path": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/5-Evaluation/5.1-All_metrics/clustering/results/results.json",
+            "type": "text",
+            "description": "Results file"
+        }
+    ],
+    "selected": {
+        "clustering_0000": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 0,
+                        "elements": "0:1, 3",
+                        "id": "cluster_0"
+                    },
+                    {
+                        "prototype": 4,
+                        "elements": "4, 8:9",
+                        "id": "cluster_1"
+                    },
+                    {
+                        "prototype": 2,
+                        "elements": "2, 6:7",
+                        "id": "cluster_3"
+                    },
+                    {
+                        "prototype": 5,
+                        "elements": "5",
+                        "id": "cluster_2"
+                    }
+                ],
+                "total_number_of_elements": 10,
+                "number_of_clusters": 4
+            },
+            "evaluation": {
+                "RatioCut": 11.89624806245168,
+                "Silhouette": 0.18576313214808254,
+                "Dunn": 0.0,
+                "Noise level": 0.0,
+                "Normalized_Cohesion": 1,
+                "MinMaxCut": 3.1564122221196027,
+                "Clusters to 90": 3,
+                "Percent in top cluster": 30.0,
+                "Cohesion": 0.4597211380305404,
+                "Mean cluster size": 2.5,
+                "Number of clusters": 4,
+                "Details": "K-Medoids algorithm with k =4 and EQUIDISTANT initial seeding",
+                "PCAanalysis": 470.26325933253594,
+                "GaussianSeparation": 6.0619162767006333e-227,
+                "Number of clustered elements": 10,
+                "NCut": 0.608825688185422,
+                "Separation": 80.38820054754657,
+                "Davies-Bouldin": 1.0492550213212939,
+                "Calinski-Harabasz": 2.7392555355482959,
+                "Percent in top 4 clusters": 100.0,
+                "Compactness": 1.0295895766572851
+            },
+            "type": "kmedoids",
+            "parameters": {
+                "k": 4
+            }
+        }
+    },
+    "not_selected": {},
+    "source_files": [
+        {
+            "source": "/home/victor/Escritorio/pyProCT-Regression/Data/files/002190.pdb",
+            "number_of_conformations": 1,
+            "number_of_atoms": 812
+        },
+        {
+            "source": "/home/victor/Escritorio/pyProCT-Regression/Data/files/002195.pdb",
+            "number_of_conformations": 1,
+            "number_of_atoms": 812
+        },
+        {
+            "source": "/home/victor/Escritorio/pyProCT-Regression/Data/files/002193.pdb",
+            "number_of_conformations": 1,
+            "number_of_atoms": 812
+        },
+        {
+            "source": "/home/victor/Escritorio/pyProCT-Regression/Data/files/002198.pdb",
+            "number_of_conformations": 1,
+            "number_of_atoms": 812
+        },
+        {
+            "source": "/home/victor/Escritorio/pyProCT-Regression/Data/files/002196.pdb",
+            "number_of_conformations": 1,
+            "number_of_atoms": 812
+        },
+        {
+            "source": "/home/victor/Escritorio/pyProCT-Regression/Data/files/002192.pdb",
+            "number_of_conformations": 1,
+            "number_of_atoms": 812
+        },
+        {
+            "source": "/home/victor/Escritorio/pyProCT-Regression/Data/files/002199.pdb",
+            "number_of_conformations": 1,
+            "number_of_atoms": 812
+        },
+        {
+            "source": "/home/victor/Escritorio/pyProCT-Regression/Data/files/002191.pdb",
+            "number_of_conformations": 1,
+            "number_of_atoms": 812
+        },
+        {
+            "source": "/home/victor/Escritorio/pyProCT-Regression/Data/files/002197.pdb",
+            "number_of_conformations": 1,
+            "number_of_atoms": 812
+        },
+        {
+            "source": "/home/victor/Escritorio/pyProCT-Regression/Data/files/002194.pdb",
+            "number_of_conformations": 1,
+            "number_of_atoms": 812
+        }
+    ],
+    "workspace": {
+        "tmp": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/5-Evaluation/5.1-All_metrics/clustering/tmp",
+        "clusters": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/5-Evaluation/5.1-All_metrics/clustering/clusters",
+        "results": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/5-Evaluation/5.1-All_metrics/clustering/results",
+        "matrix": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/5-Evaluation/5.1-All_metrics/clustering/matrix"
+    },
+    "scores": {
+        "criteria_0": {
+            "clustering_0000": 1.0
+        }
+    },
+    "timing": [
+        {
+            "name": "Global",
+            "elapsed": 0.3149900436401367
+        },
+        {
+            "name": "Clustering Section",
+            "elapsed": 0.0571749210357666
+        },
+        {
+            "name": "Clustering Exploration",
+            "elapsed": 0.022810935974121094
+        },
+        {
+            "name": "Clustering Filtering",
+            "elapsed": 6.985664367675781e-05
+        },
+        {
+            "name": "Evaluation",
+            "elapsed": 0.034033775329589844
+        },
+        {
+            "name": "Selection",
+            "elapsed": 0.0001850128173828125
+        },
+        {
+            "name": "Postprocessing",
+            "elapsed": 0.17840313911437988
+        }
+    ]
+}

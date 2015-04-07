@@ -1,0 +1,30 @@
+{
+    "global":{
+        "control": {
+            "scheduler_type": "Serial"
+        },
+        "workspace": {
+            "base": "clustering"
+        }
+    },
+    "data":{
+        "type": "pdb_ensemble",
+        
+        "files":[
+            "Structures/1_10.benzamidine.pdb"
+            ],
+            
+        "matrix":{
+            "method": "distance",
+            "parameters": {
+                "calculator_type": "QCP_OMP_CALCULATOR",
+                "fit_selection": "name CA",
+		"body_selection": "resname XI7" 
+            },
+            "filename":"matrix",
+            "image": {
+                "filename": "matrix_plot"
+            }
+        }
+    }
+}

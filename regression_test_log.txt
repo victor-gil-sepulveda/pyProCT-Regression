@@ -1,0 +1,3 @@
+- Performing serial::is_executable test ... 
+	- Different files: clustering/results/parameters.json and ExpectedResults/1/parameters.json 
+	 FAILED

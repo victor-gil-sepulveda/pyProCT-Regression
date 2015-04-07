@@ -1,0 +1,22 @@
+[
+    {
+        "name": "chain_mapping",
+        "description": "6 tetramers (same chain). Chains are unordered. Can be used to demonstrate chain mapping features.",
+        "source": "Data/chain_mapping.tar.gz"
+    },
+    {
+        "name": "partial_load",
+        "description": "Two conformations of the same intrinsically disordered protein. One is longer than the other (has cappings).",
+        "source":"Data/chain_mapping.tar.gz"
+    },
+    {
+        "name": "benzamidine",
+        "description": "10 frames of a benzamidine-protein interaction.",
+        "source":"Data/benzamidine.tar.gz"
+    },
+    {
+        "name": "dihedral",
+        "description": "10 frames of a intrinsically disordered protein.",
+        "source":"Data/dihedral.tar.gz"
+    }
+]

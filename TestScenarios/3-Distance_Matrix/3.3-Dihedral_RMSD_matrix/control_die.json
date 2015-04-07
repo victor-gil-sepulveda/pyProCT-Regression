@@ -1,0 +1,28 @@
+{
+    "global":{
+        "control": {
+            "scheduler_type": "Serial"
+        },
+        "workspace": {
+            "base": "clustering",
+            "matrix": "../matrix_dihedrals"
+        }
+    },
+    "data":{
+        "type": "protein::ensemble",
+        
+        "files":[
+            "Structures/conformations.lst"
+	],
+            
+        "matrix":{
+            "method": "rmsd::ensemble",
+            "parameters": {
+                "type": "DIHEDRALS"
+            },
+            "image": {
+                "filename": "matrix_plot"
+            }
+        }
+    }
+}

@@ -1,22 +1,20 @@
 [
     {
-    	"name": "serial::is_executable",
-    	"description": "Tests that pyProCT is available and executable, and that it can create the workspace",
+        "name": "serial::is_executable",
+        "description": "Tests that pyProCT is available and executable, and that it can create the workspace",
         "script": "TestScenarios/1-Execution/control.json",
         "expected_results_dir": "ExpectedResults/1",
         "files_to_check": {
-        		"results": ["parameters.json"]
+                "results": ["parameters.json"]
         }
     },
-    
     {
-    	"name": "serial::is_executable",
-    	"description": "Tests that pyProCT is available and executable, and that it can create the workspace",
+        "name": "serial::is_executable",
+        "description": "Tests that pyProCT is available and executable, and that it can create the workspace",
         "script": "TestScenarios/1-Execution/control.json",
         "expected_results_dir": "ExpectedResults/1",
         "files_to_check": {
-        		"results": ["parameters.json"]
+                "results": ["parameters.json"]
         }
-    },
-    
+    }
 ]

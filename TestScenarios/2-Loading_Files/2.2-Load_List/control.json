@@ -9,9 +9,9 @@
     },
     "data":{
         "type": "protein::ensemble",
-        
-        "files":["structures.list"],
-            
+
+        "files":["structures.lst"],
+
         "matrix":{
             "method": "rmsd::ensemble",
             "parameters": {

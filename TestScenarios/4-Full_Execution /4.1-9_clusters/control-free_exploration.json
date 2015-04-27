@@ -46,11 +46,11 @@
             "maximum_noise": 0,
             "evaluation_criteria": {
                 "criteria_0": {
-                    "CythonSilhouette": {
+                    "Silhouette": {
                         "action": ">",
                         "weight": 3
                     },
-                    "CythonMirrorCohesion": {
+                    "Cohesion": {
                         "action": ">",
                         "weight": 2
                     }

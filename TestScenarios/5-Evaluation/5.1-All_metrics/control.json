@@ -11,7 +11,7 @@
     "data": {
         "type": "protein::ensemble",
         "files": [
-                "/home/victor/Escritorio/pyProCT-Regression/Data/files/00219?.pdb"
+                "Structures/002198.pdb"
         ],
         "matrix": {
             "method": "rmsd::ensemble",

@@ -2,47 +2,47 @@
     "best_clustering": "clustering_0018",
     "created_files": [
         {
-            "path": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/results/parameters.json",
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/results/parameters.json",
             "type": "text",
             "description": "Parameters file"
         },
         {
-            "path": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/matrix/statistics.json",
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/matrix/statistics.json",
             "type": "text",
             "description": "Matrix statistics"
         },
         {
-            "path": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/matrix/matrix_plot",
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/matrix/matrix_plot",
             "type": "image",
             "description": "Matrix image"
         },
         {
-            "path": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/results/per_cluster_stats.csv",
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/results/per_cluster_stats.csv",
             "type": "text",
             "description": "Stats for all clusterings (diameter and distances from center)"
         },
         {
-            "path": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/results/clusters.tar.gz",
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/results/clusters.tar.gz",
             "type": "compressed_pdb",
             "description": "Clusters"
         },
         {
-            "path": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/results/atomic_distances.csv",
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/results/atomic_distances.csv",
             "type": "csv",
             "description": "Atom distances file"
         },
         {
-            "path": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/results/representatives.pdb",
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/results/representatives.pdb",
             "type": "pdb",
             "description": "Cluster representatives"
         },
         {
-            "path": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/results/CA_displacements.json",
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/results/CA_displacements.json",
             "type": "text",
             "description": "Alpha Carbon mean square displacements"
         },
         {
-            "path": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/results/results.json",
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/results/results.json",
             "type": "text",
             "description": "Results file"
         }
@@ -966,10 +966,10 @@
         }
     ],
     "workspace": {
-        "tmp": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/tmp",
-        "clusters": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/clusters",
-        "results": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/results",
-        "matrix": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/matrix"
+        "tmp": "/home/kurtz/xlin/tfg/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/tmp",
+        "clusters": "/home/kurtz/xlin/tfg/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/clusters",
+        "results": "/home/kurtz/xlin/tfg/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/results",
+        "matrix": "/home/kurtz/xlin/tfg/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering/matrix"
     },
     "scores": {
         "criteria_0": {
@@ -981,31 +981,31 @@
     "timing": [
         {
             "name": "Global",
-            "elapsed": 0.6026549339294434
+            "elapsed": 1.0409469604492188
         },
         {
             "name": "Clustering Section",
-            "elapsed": 0.04647397994995117
+            "elapsed": 0.06589078903198242
         },
         {
             "name": "Clustering Exploration",
-            "elapsed": 0.04410696029663086
+            "elapsed": 0.0622868537902832
         },
         {
             "name": "Clustering Filtering",
-            "elapsed": 0.001428842544555664
+            "elapsed": 0.002190113067626953
         },
         {
             "name": "Evaluation",
-            "elapsed": 0.0007178783416748047
+            "elapsed": 0.0011239051818847656
         },
         {
             "name": "Selection",
-            "elapsed": 0.0001728534698486328
+            "elapsed": 0.0002200603485107422
         },
         {
             "name": "Postprocessing",
-            "elapsed": 0.23365283012390137
+            "elapsed": 0.3972468376159668
         }
     ]
 }

@@ -51,7 +51,7 @@
                 "overwrite": true
             },
             "results": "results",
-            "base": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering",
+            "base": "/home/kurtz/xlin/tfg/pyProCT-Regression/TestScenarios/4-Full_Execution /4.3-Few_clusters/clustering",
             "clusters": "clusters"
         }
     },

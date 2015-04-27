@@ -65,13 +65,13 @@
                 "overwrite": true
             },
             "results": "results",
-            "base": "/home/victor/Escritorio/pyProCT-Regression/TestScenarios/5-Evaluation/5.1-All_metrics/clustering",
+            "base": "/home/kurtz/xlin/tfg/pyProCT-Regression/TestScenarios/5-Evaluation/5.1-All_metrics/clustering",
             "clusters": "clusters"
         }
     },
     "data": {
         "files": [
-            "/home/victor/Escritorio/pyProCT-Regression/Data/files/00219?.pdb"
+            "Structures/002198.pdb"
         ],
         "type": "protein::ensemble",
         "matrix": {

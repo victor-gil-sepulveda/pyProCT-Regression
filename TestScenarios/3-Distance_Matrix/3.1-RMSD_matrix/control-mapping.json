@@ -9,14 +9,14 @@
         }
     },
     "data":{
-        "type": "pdb_ensemble",
-        
+        "type": "protein::ensemble",
+
         "files":[
-            "structures.list"
+            "Data/files/3.1.structures.lst"
             ],
-            
+
         "matrix":{
-            "method": "rmsd",
+            "method": "rmsd::ensemble",
             "parameters": {
                 "calculator_type": "QCP_OMP_CALCULATOR",
                 "fit_selection": "backbone",

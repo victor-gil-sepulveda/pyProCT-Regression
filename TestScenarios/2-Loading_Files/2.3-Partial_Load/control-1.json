@@ -11,7 +11,7 @@
         "type": "protein::ensemble",
 
         "files":[
-            "Structures/0030429999.pdb"
+            "Data/files/0030429999.pdb"
         ],
 
         "matrix":{

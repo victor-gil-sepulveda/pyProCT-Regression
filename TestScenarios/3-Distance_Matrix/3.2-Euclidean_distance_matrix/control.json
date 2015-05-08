@@ -8,18 +8,18 @@
         }
     },
     "data":{
-        "type": "pdb_ensemble",
-        
+        "type": "protein::ensemble",
+
         "files":[
-            "Structures/1_10.benzamidine.pdb"
+            "Data/files/1_10.benzamidine.pdb"
             ],
-            
+
         "matrix":{
-            "method": "distance",
+            "method": "euclidean_distance::ensemble",
             "parameters": {
                 "calculator_type": "QCP_OMP_CALCULATOR",
                 "fit_selection": "name CA",
-		"body_selection": "resname XI7" 
+		"body_selection": "resname XI7"
             },
             "filename":"matrix",
             "image": {

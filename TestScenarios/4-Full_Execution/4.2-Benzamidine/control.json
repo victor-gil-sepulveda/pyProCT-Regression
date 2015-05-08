@@ -1,0 +1,79 @@
+{
+    "global":{
+        "control": {
+            "scheduler_type": "Serial"
+        },
+        "workspace": {
+            "base": "clustering"
+        }
+    },
+    "data":{
+        "type": "protein::ensemble",
+
+        "files":[
+            "Data/files/1_100.benzamidine.pdb"
+            ],
+
+        "matrix":{
+            "method": "euclidean_distance::ensemble",
+            "parameters": {
+                "calculator_type": "QCP_OMP_CALCULATOR",
+                "fit_selection": "name CA",
+		        "body_selection": "resname XI7"
+            },
+            "image": {
+                "filename": "matrix_plot"
+            }
+        }
+    },
+    "clustering": {
+        "generation": {
+            "method": "generate"
+        },
+        "algorithms": {
+            "spectral": {},
+            "dbscan": {},
+            "gromos": {},
+            "kmedoids": {},
+            "hierarchical": {}
+        },
+        "evaluation": {
+            "evaluation_criteria": {
+                "criteria_0": {
+                    "Silhouette": {
+                        "action": ">",
+                        "weight": 3
+                    },
+                    "Cohesion": {
+                        "action": ">",
+                        "weight": 2
+                    }
+                }
+            },
+            "query_types": [
+                "NumClusters",
+                "NoiseLevel",
+                "MeanClusterSize"
+            ],
+            "maximum_noise": 0,
+            "minimum_cluster_size": 5,
+            "maximum_clusters": 15,
+            "minimum_clusters": 3
+        }
+    },
+    "postprocess": {
+        "centers_and_trace": {},
+
+        "representatives": {
+            "keep_remarks": true,
+            "keep_frame_number": false
+        },
+
+        "pdb_clusters": {
+            "keep_remarks": false,
+            "keep_frame_number": true
+        },
+
+        "cluster_stats":{}
+    }
+}

@@ -1,20 +1,137 @@
 [
     {
-        "name": "serial::is_executable",
-        "description": "Tests that pyProCT is available and executable, and that it can create the workspace",
+    	"name": "serial::is_executable",
+    	"description": "Tests that pyProCT is available and executable, and that it can create the workspace",
         "script": "TestScenarios/1-Execution/control.json",
         "expected_results_dir": "ExpectedResults/1",
         "files_to_check": {
-                "results": ["parameters.json"]
+        		"results": ["parameters.json"]
         }
     },
     {
-        "name": "serial::is_executable",
-        "description": "Tests that pyProCT is available and executable, and that it can create the workspace",
-        "script": "TestScenarios/1-Execution/control.json",
-        "expected_results_dir": "ExpectedResults/1",
+     	"name": "serial::loading_files_2.1",
+     	"description": "Tests pyProCT load files method (load)",
+        "script": "TestScenarios/2-Loading_Files/2.1-Load/control.json",
+        "expected_results_dir": "ExpectedResults/2/1",
         "files_to_check": {
-                "results": ["parameters.json"]
+         		"results": ["parameters.json"]
+        }
+    },
+    {
+        "name": "serial::loading_files_2.2",
+        "description": "Tests pyProCT load list files method (load list)",
+        "script": "TestScenarios/2-Loading_Files/2.2-Load_List/control.json",
+        "expected_results_dir": "ExpectedResults/2/2",
+        "files_to_check": {
+                 "results": ["parameters.json"]
+        }
+    },
+    {
+        "name": "serial::loading_files_2.3_1",
+        "description": "Tests pyProCT partial load files method (partial load)",
+        "script": "TestScenarios/2-Loading_Files/2.3-Partial_Load/control-1.json",
+        "expected_results_dir": "ExpectedResults/2/3.1",
+        "files_to_check": {
+                 "results": ["parameters.json"]
+        }
+    },
+    {
+        "name": "serial::loading_files_2.3_2",
+        "description": "Tests pyProCT partial load files method (partial load)",
+        "script": "TestScenarios/2-Loading_Files/2.3-Partial_Load/control-2.json",
+        "expected_results_dir": "ExpectedResults/2/3.2",
+        "files_to_check": {
+                 "results": ["parameters.json"]
+        }
+    },
+    {
+        "name": "serial::loading_files_3.1_mapping",
+        "description": "Tests pyProCT Distance Matrix - mapping",
+        "script": "TestScenarios/3-Distance_Matrix/3.1-RMSD_matrix/control-mapping.json",
+        "expected_results_dir": "ExpectedResults/3/1.mapping",
+        "files_to_check": {
+                 "results": ["parameters.json"]
+        }
+    },
+    {
+         "name": "serial::loading_files_3.1_no-map",
+         "description": "Tests pyProCT Distance Matrix - no map",
+         "script": "TestScenarios/3-Distance_Matrix/3.1-RMSD_matrix/control-no_map.json",
+         "expected_results_dir": "ExpectedResults/3/1.no_map",
+         "files_to_check": {
+                 "results": ["parameters.json"]
+        }
+    },
+    {
+        "name": "serial::loading_files_3.2",
+        "description": "Tests pyProCT  Euclidean Distance Matrix",
+        "script": "TestScenarios/3-Distance_Matrix/3.2-Euclidean_distance_matrix/control.json",
+        "expected_results_dir": "ExpectedResults/3/2",
+        "files_to_check": {
+                 "results": ["parameters.json"]
+        }
+    },
+    {
+        "name": "serial::loading_files_3.3.dihedral",
+        "description": "Tests pyProCT Dihedral Distance Matrix",
+        "script": "TestScenarios/3-Distance_Matrix/3.3-Dihedral_RMSD_matrix/control_die.json",
+        "expected_results_dir": "ExpectedResults/3/3.dihedral",
+        "files_to_check": {
+                 "results": ["parameters.json"]
+        }
+    },
+    {
+        "name": "serial::loading_files_3.3.rmsd",
+        "description": "Tests pyProCT RMSD Distance Matrix",
+        "script": "TestScenarios/3-Distance_Matrix/3.3-Dihedral_RMSD_matrix/control_rmsd.json",
+        "expected_results_dir": "ExpectedResults/3/3.rmsd",
+        "files_to_check": {
+                 "results": ["parameters.json"]
+        }
+    },
+    {
+        "name": "serial::full_execution 4.1.9-free-exploration",
+        "description": "Tests that full pyProCT with free exploration",
+        "script": "TestScenarios/4-Full_Execution/4.1-9_clusters/control-free_exploration.json",
+        "expected_results_dir": "ExpectedResults/4/1-9.free-exploration",
+        "files_to_check": {
+                  "results": ["parameters.json"]
+        }
+    },
+    {
+        "name": "serial::full_execution 4.1.9-k-medoids",
+        "description": "Tests that full pyProCT with k-medoids",
+        "script": "TestScenarios/4-Full_Execution/4.1-9_clusters/control-kmedoids.json",
+        "expected_results_dir": "ExpectedResults/4/1-9.kmedoids",
+        "files_to_check": {
+                  "results": ["parameters.json"]
+        }
+    },
+    {
+        "name": "serial::full_execution 4.2-benzamidine",
+        "description": "Tests that full pyProCT with benzamidine",
+        "script": "TestScenarios/4-Full_Execution/4.2-Benzamidine/control.json",
+        "expected_results_dir": "ExpectedResults/4/2",
+        "files_to_check": {
+                  "results": ["parameters.json"]
+        }
+    },
+    {
+        "name": "serial::full_execution 4.3-few clusters",
+        "description": "Tests pyProCT few clusters",
+        "script": "TestScenarios/4-Full_Execution/4.3-Few_clusters/control.json",
+        "expected_results_dir": "ExpectedResults/4/3",
+        "files_to_check": {
+                  "results": ["parameters.json"]
+        }
+    },
+    {
+        "name": "serial::all_metrics-5.1",
+        "description": "Tests pyProCT with all metrics",
+        "script": "TestScenarios/5-Evaluation/5.1-All_metrics/control.json",
+        "expected_results_dir": "ExpectedResults/5/1",
+        "files_to_check": {
+                  "results": ["parameters.json"]
         }
     }
 ]

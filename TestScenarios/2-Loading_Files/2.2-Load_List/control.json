@@ -10,7 +10,7 @@
     "data":{
         "type": "protein::ensemble",
 
-        "files":["structures.lst"],
+        "files":["Data/files/2.2.load_list.lst"],
 
         "matrix":{
             "method": "rmsd::ensemble",

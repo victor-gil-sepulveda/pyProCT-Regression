@@ -11,7 +11,7 @@
     "data": {
         "type": "protein::ensemble",
         "files": [
-                "Structures/002198.pdb"
+                "Data/files/9_natural_clusters.pdb"
         ],
         "matrix": {
             "method": "rmsd::ensemble",

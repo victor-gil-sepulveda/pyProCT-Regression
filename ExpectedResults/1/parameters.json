@@ -1,0 +1,20 @@
+{
+    "global": {
+        "control": {
+            "scheduler_type": "Serial"
+        },
+        "workspace": {
+            "tmp": "tmp",
+            "matrix": "matrix",
+            "parameters": {
+                "clear_after_exec": [
+                    "tmp"
+                ],
+                "overwrite": true
+            },
+            "results": "results",
+            "base": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/1",
+            "clusters": "clusters"
+        }
+    }
+}

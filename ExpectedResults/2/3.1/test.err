@@ -1,0 +1,9 @@
+@> ProDy is configured: verbosity='none'
+Traceback (most recent call last):
+  File "/home/kurtz/xlin/tfg/pyProCT/pyproct/data/matrix/matrixCalculator.py", line 25, in calculate
+    distance_matrix = calculator_class.calculate(data_handler, matrix_params["parameters"])
+  File "/home/kurtz/xlin/tfg/pyProCT/pyproct/data/matrix/protein/rmsdMatrixCalculator.py", line 78, in calculate
+    return  RMSDMatrixBuilder.build(data_handler, matrix_params)
+  File "/home/kurtz/xlin/tfg/pyProCT/pyproct/data/matrix/protein/cases/rmsd/cartesiansCase.py", line 66, in build
+    return CondensedMatrix(rmsds)
+ValueError: [CondensedMatrix] Input list must be a 1D real vector with size > 0.

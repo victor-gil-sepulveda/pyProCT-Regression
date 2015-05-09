@@ -1,0 +1,11 @@
+{
+    "global": {
+        "control": {
+            "scheduler_type": "Serial"
+        },
+        "workspace": {
+            "base": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/1"
+        }
+    }
+}
+[Warning driver::run] 'data' object was not defined in the control script. pyProCT will now stop.

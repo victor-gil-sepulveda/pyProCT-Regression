@@ -1,0 +1,25 @@
+@> ProDy is configured: verbosity='none'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/runpy.py", line 162, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/home/kurtz/xlin/tfg/pyProCT/pyproct/main.py", line 73, in <module>
+    Driver(observer).run(parameters)
+  File "/home/kurtz/xlin/tfg/pyProCT/pyproct/driver/time/timerHandler.py", line 75, in timer_wrap
+    result = f(*args, **kwargs)
+  File "/home/kurtz/xlin/tfg/pyProCT/pyproct/driver/driver.py", line 35, in run
+    self.generatedFiles)
+  File "/home/kurtz/xlin/tfg/pyProCT/pyproct/data/dataDriver.py", line 23, in run
+    data_handler = cls.load_data(parameters)
+  File "/home/kurtz/xlin/tfg/pyProCT/pyproct/data/dataDriver.py", line 54, in load_data
+    return DataHandler(parameters)
+  File "/home/kurtz/xlin/tfg/pyProCT/pyproct/data/handler/dataHandler.py", line 23, in __init__
+    self.sources = source_generator_class(params["files"]).source_list
+  File "/home/kurtz/xlin/tfg/pyProCT/pyproct/data/handler/sourceGenerator.py", line 18, in __init__
+    self.source_list = [DataSource(source) for source in SourceGenerator.inflate_source_list(source_list)]
+  File "/home/kurtz/xlin/tfg/pyProCT/pyproct/data/handler/sourceGenerator.py", line 44, in inflate_source_list
+    inflated_list.extend(cls.get_sources_from_dictionary(source))
+  File "/home/kurtz/xlin/tfg/pyProCT/pyproct/data/handler/sourceGenerator.py", line 83, in get_sources_from_dictionary
+    for path in cls.do_glob(info_dict["source"]):
+KeyError: 'source'

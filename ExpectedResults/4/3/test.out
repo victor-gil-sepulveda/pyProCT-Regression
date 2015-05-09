@@ -1,0 +1,123 @@
+{
+    "clustering": {
+        "generation": {
+            "method": "generate"
+        },
+        "evaluation": {
+            "minimum_cluster_size": 1,
+            "maximum_noise": 0,
+            "evaluation_criteria": {
+                "criteria_0": {
+                    "Cohesion": {
+                        "action": ">",
+                        "weight": 2
+                    },
+                    "Silhouette": {
+                        "action": ">",
+                        "weight": 3
+                    }
+                }
+            },
+            "query_types": [
+                "NumClusters",
+                "NoiseLevel",
+                "MeanClusterSize"
+            ],
+            "maximum_clusters": 50,
+            "minimum_clusters": 1
+        },
+        "algorithms": {
+            "kmedoids": {
+                "max": 15
+            },
+            "hierarchical": {},
+            "dbscan": {},
+            "gromos": {
+                "max": 15
+            }
+        }
+    },
+    "global": {
+        "control": {
+            "scheduler_type": "Serial"
+        },
+        "workspace": {
+            "base": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/3",
+            "matrix": "matrix"
+        }
+    },
+    "data": {
+        "files": [
+            "Data/files/4.3.pdb_list_4.lst"
+        ],
+        "type": "protein::ensemble",
+        "matrix": {
+            "image": {
+                "filename": "matrix_plot"
+            },
+            "method": "rmsd::ensemble",
+            "parameters": {
+                "calculator_type": "QCP_OMP_CALCULATOR",
+                "chain_map": false,
+                "calc_selection": "chain B and name CA",
+                "fit_selection": "chain A"
+            },
+            "filename": "matrix"
+        }
+    },
+    "postprocess": {
+        "pdb_clusters": {
+            "keep_remarks": false,
+            "keep_frame_number": true
+        },
+        "atomic_distances": {
+            "distances": {
+                "distance 2": {
+                    "to": "chain A ",
+                    "from": "chain B "
+                },
+                "distance 1": {
+                    "to": "chain A and resid 148 and name C",
+                    "from": "chain B and resid 6 and name CB"
+                }
+            }
+        },
+        "cluster_stats": {},
+        "rmsf": {},
+        "representatives": {
+            "keep_remarks": true,
+            "keep_frame_number": false
+        }
+    }
+}
+Inflate source list = ['Data/files/4.3.pdb_list_4.lst']
+Inflate source list = ['Data/files/1PPE_7888.pdb', 'Data/files/1PPE_2386.pdb', 'Data/files/1PPE_27.pdb', 'Data/files/1PPE_ref.pdb']
+Do_glob [path] : Data/files/1PPE_7888.pdb
+Returning paths
+Do_glob [path] : Data/files/1PPE_2386.pdb
+Returning paths
+Do_glob [path] : Data/files/1PPE_27.pdb
+Returning paths
+Do_glob [path] : Data/files/1PPE_ref.pdb
+Returning paths
+4 conformations of 1849 atoms were read.
+Calculating statistics ...
+Generating params for kmedoids
+Generating params for hierarchical
+Generating params for dbscan
+Generating params for gromos
+=======================
+Summary:
+--------
+- 29 clusterings were generated.
+- Chosen cluster:
+	- Used algorithm:  gromos
+	- Number of clusters:  3
+	- Mean cluster size:  1.33333333333
+	- Noise: 0.00 %
+	- Quality function results: 
+Type[<type 'numpy.float64'>], Value[0.945956679962]
+		- Silhouette: 0.945956679962
+Type[<type 'float'>], Value[0.976986137331]
+		- Cohesion: 0.976986137331
+=======================

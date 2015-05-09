@@ -1,0 +1,52 @@
+{
+    "global": {
+        "control": {
+            "scheduler_type": "Serial"
+        },
+        "workspace": {
+            "base": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/3/3.rmsd",
+            "matrix": "matrix_rmsd"
+        }
+    },
+    "data": {
+        "files": [
+            "Data/files/3.3.conformations.lst"
+        ],
+        "type": "protein::ensemble",
+        "matrix": {
+            "image": {
+                "filename": "matrix_plot"
+            },
+            "method": "rmsd::ensemble",
+            "parameters": {
+                "type": "COORDINATES",
+                "fit_selection": "backbone"
+            }
+        }
+    }
+}
+Inflate source list = ['Data/files/3.3.conformations.lst']
+Inflate source list = ['Data/files/002190.pdb', 'Data/files/002191.pdb', 'Data/files/002192.pdb', 'Data/files/002193.pdb', 'Data/files/002194.pdb', 'Data/files/002195.pdb', 'Data/files/002196.pdb', 'Data/files/002197.pdb', 'Data/files/002198.pdb', 'Data/files/002199.pdb']
+Do_glob [path] : Data/files/002190.pdb
+Returning paths
+Do_glob [path] : Data/files/002191.pdb
+Returning paths
+Do_glob [path] : Data/files/002192.pdb
+Returning paths
+Do_glob [path] : Data/files/002193.pdb
+Returning paths
+Do_glob [path] : Data/files/002194.pdb
+Returning paths
+Do_glob [path] : Data/files/002195.pdb
+Returning paths
+Do_glob [path] : Data/files/002196.pdb
+Returning paths
+Do_glob [path] : Data/files/002197.pdb
+Returning paths
+Do_glob [path] : Data/files/002198.pdb
+Returning paths
+Do_glob [path] : Data/files/002199.pdb
+Returning paths
+10 conformations of 812 atoms were read.
+Calculating statistics ...
+[Warning driver::run] 'clustering' object was not defined in the control script. pyProCT will now stop.

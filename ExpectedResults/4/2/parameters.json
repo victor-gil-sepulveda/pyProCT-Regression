@@ -1,0 +1,84 @@
+{
+    "clustering": {
+        "generation": {
+            "method": "generate"
+        },
+        "evaluation": {
+            "minimum_cluster_size": 5,
+            "maximum_noise": 0,
+            "evaluation_criteria": {
+                "criteria_0": {
+                    "Cohesion": {
+                        "action": ">",
+                        "weight": 2
+                    },
+                    "Silhouette": {
+                        "action": ">",
+                        "weight": 3
+                    }
+                }
+            },
+            "query_types": [
+                "NumClusters",
+                "NoiseLevel",
+                "MeanClusterSize"
+            ],
+            "maximum_clusters": 15,
+            "minimum_clusters": 3
+        },
+        "algorithms": {
+            "spectral": {},
+            "kmedoids": {},
+            "hierarchical": {},
+            "dbscan": {},
+            "gromos": {}
+        }
+    },
+    "global": {
+        "control": {
+            "scheduler_type": "Serial"
+        },
+        "workspace": {
+            "tmp": "tmp",
+            "matrix": "matrix",
+            "parameters": {
+                "clear_after_exec": [
+                    "tmp"
+                ],
+                "overwrite": true
+            },
+            "results": "results",
+            "base": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/2",
+            "clusters": "clusters"
+        }
+    },
+    "data": {
+        "files": [
+            "Data/files/1_100.benzamidine.pdb"
+        ],
+        "type": "protein::ensemble",
+        "matrix": {
+            "image": {
+                "filename": "matrix_plot"
+            },
+            "method": "euclidean_distance::ensemble",
+            "parameters": {
+                "calculator_type": "QCP_OMP_CALCULATOR",
+                "body_selection": "resname XI7",
+                "fit_selection": "name CA"
+            }
+        }
+    },
+    "postprocess": {
+        "pdb_clusters": {
+            "keep_remarks": false,
+            "keep_frame_number": true
+        },
+        "cluster_stats": {},
+        "representatives": {
+            "keep_remarks": true,
+            "keep_frame_number": false
+        },
+        "centers_and_trace": {}
+    }
+}

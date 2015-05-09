@@ -1,0 +1,29 @@
+{
+    "global": {
+        "control": {
+            "scheduler_type": "Serial"
+        },
+        "workspace": {
+            "base": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/2/3.1"
+        }
+    },
+    "data": {
+        "files": [
+            "Data/files/0030429999.pdb"
+        ],
+        "type": "protein::ensemble",
+        "matrix": {
+            "method": "rmsd::ensemble",
+            "parameters": {
+                "calculator_type": "QCP_OMP_CALCULATOR",
+                "fit_selection": "backbone"
+            }
+        }
+    }
+}
+Inflate source list = ['Data/files/0030429999.pdb']
+Do_glob [path] : Data/files/0030429999.pdb
+Returning paths
+1 conformations of 812 atoms were read.
+[ERROR][Driver::postprocess] Impossible to perform matrix calculation for method: rmsd::ensemble
+Message: [CondensedMatrix] Input list must be a 1D real vector with size > 0.

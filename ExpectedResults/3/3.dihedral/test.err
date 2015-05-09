@@ -1,0 +1,11 @@
+@> ProDy is configured: verbosity='none'
+Traceback (most recent call last):
+  File "/home/kurtz/xlin/tfg/pyProCT/pyproct/data/matrix/matrixCalculator.py", line 25, in calculate
+    distance_matrix = calculator_class.calculate(data_handler, matrix_params["parameters"])
+  File "/home/kurtz/xlin/tfg/pyProCT/pyproct/data/matrix/protein/rmsdMatrixCalculator.py", line 86, in calculate
+    return DihedralRMSDBuilder.build(data_handler.get_data())
+  File "/home/kurtz/xlin/tfg/pyProCT/pyproct/data/matrix/protein/cases/rmsd/dihedralsCase.py", line 34, in build
+    data.append(mathTools.angular_rmsd(dihedrals_i,all_dihedrals[j]))
+  File "/home/kurtz/xlin/tfg/pyProCT/pyproct/tools/mathTools.py", line 13, in angular_rmsd
+    return math.sqrt((angular_increment(a-b)**2).sum()/len(a))
+TypeError: angular_increment() takes exactly 2 arguments (1 given)

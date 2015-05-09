@@ -1,0 +1,3 @@
+@> ProDy is configured: verbosity='none'
+/home/kurtz/xlin/tfg/pyProCT/pyproct/clustering/algorithms/hierarchical/hierarchicalAlgorithm.py:57: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
+  if self.hie_mat == None:

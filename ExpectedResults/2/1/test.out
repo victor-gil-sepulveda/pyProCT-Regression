@@ -1,0 +1,55 @@
+{
+    "global": {
+        "control": {
+            "scheduler_type": "Serial"
+        },
+        "workspace": {
+            "base": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/2/1",
+            "parameters": {
+                "clear_after_exec": [
+                    "tmp"
+                ],
+                "overwrite": true
+            }
+        }
+    },
+    "data": {
+        "files": [
+            "Data/files/1_T70.10.pdb",
+            "Data/files/3_T70.16.pdb",
+            "Data/files/5_T70.11.pdb",
+            "Data/files/2_T70.15.pdb",
+            "Data/files/4_T70.26.pdb",
+            "Data/files/6_T70.38.pdb"
+        ],
+        "type": "protein::ensemble",
+        "matrix": {
+            "image": {
+                "filename": "matrix_plot"
+            },
+            "method": "rmsd::ensemble",
+            "parameters": {
+                "calculator_type": "QCP_OMP_CALCULATOR",
+                "chain_map": false,
+                "fit_selection": "backbone"
+            },
+            "filename": "matrix"
+        }
+    }
+}
+Inflate source list = ['Data/files/1_T70.10.pdb', 'Data/files/3_T70.16.pdb', 'Data/files/5_T70.11.pdb', 'Data/files/2_T70.15.pdb', 'Data/files/4_T70.26.pdb', 'Data/files/6_T70.38.pdb']
+Do_glob [path] : Data/files/1_T70.10.pdb
+Returning paths
+Do_glob [path] : Data/files/3_T70.16.pdb
+Returning paths
+Do_glob [path] : Data/files/5_T70.11.pdb
+Returning paths
+Do_glob [path] : Data/files/2_T70.15.pdb
+Returning paths
+Do_glob [path] : Data/files/4_T70.26.pdb
+Returning paths
+Do_glob [path] : Data/files/6_T70.38.pdb
+Returning paths
+6 conformations of 3988 atoms were read.
+Calculating statistics ...
+[Warning driver::run] 'clustering' object was not defined in the control script. pyProCT will now stop.

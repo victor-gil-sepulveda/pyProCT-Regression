@@ -1,0 +1,37 @@
+{
+    "global": {
+        "control": {
+            "scheduler_type": "Serial"
+        },
+        "workspace": {
+            "tmp": "tmp",
+            "matrix": "matrix",
+            "parameters": {
+                "clear_after_exec": [
+                    "tmp"
+                ],
+                "overwrite": true
+            },
+            "results": "results",
+            "base": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/2/2",
+            "clusters": "clusters"
+        }
+    },
+    "data": {
+        "files": [
+            "Data/files/2.2.load_list.lst"
+        ],
+        "type": "protein::ensemble",
+        "matrix": {
+            "image": {
+                "filename": "matrix_plot"
+            },
+            "method": "rmsd::ensemble",
+            "parameters": {
+                "calculator_type": "QCP_OMP_CALCULATOR",
+                "fit_selection": "backbone"
+            },
+            "filename": "matrix"
+        }
+    }
+}

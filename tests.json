@@ -9,7 +9,7 @@
         }
     },
     {
-     	"name": "serial::loading_files_2.1",
+     	"name": "serial::loading_files_2.1_load",
      	"description": "Tests pyProCT load files method (load)",
         "script": "TestScenarios/2-Loading_Files/2.1-Load/control.json",
         "expected_results_dir": "ExpectedResults/2/1",
@@ -18,7 +18,7 @@
         }
     },
     {
-        "name": "serial::loading_files_2.2",
+        "name": "serial::loading_files_2.2_list",
         "description": "Tests pyProCT load list files method (load list)",
         "script": "TestScenarios/2-Loading_Files/2.2-Load_List/control.json",
         "expected_results_dir": "ExpectedResults/2/2",
@@ -27,7 +27,7 @@
         }
     },
     {
-        "name": "serial::loading_files_2.3_1",
+        "name": "serial::loading_files_2.3_partial.1",
         "description": "Tests pyProCT partial load files method (partial load)",
         "script": "TestScenarios/2-Loading_Files/2.3-Partial_Load/control-1.json",
         "expected_results_dir": "ExpectedResults/2/3.1",
@@ -36,7 +36,7 @@
         }
     },
     {
-        "name": "serial::loading_files_2.3_2",
+        "name": "serial::loading_files_2.3_partial.2",
         "description": "Tests pyProCT partial load files method (partial load)",
         "script": "TestScenarios/2-Loading_Files/2.3-Partial_Load/control-2.json",
         "expected_results_dir": "ExpectedResults/2/3.2",
@@ -45,7 +45,7 @@
         }
     },
     {
-        "name": "serial::loading_files_3.1_mapping",
+        "name": "serial::distance_matrix_3.1_mapping",
         "description": "Tests pyProCT Distance Matrix - mapping",
         "script": "TestScenarios/3-Distance_Matrix/3.1-RMSD_matrix/control-mapping.json",
         "expected_results_dir": "ExpectedResults/3/1.mapping",
@@ -54,7 +54,7 @@
         }
     },
     {
-         "name": "serial::loading_files_3.1_no-map",
+         "name": "serial::distance_matrix_3.1_no-map",
          "description": "Tests pyProCT Distance Matrix - no map",
          "script": "TestScenarios/3-Distance_Matrix/3.1-RMSD_matrix/control-no_map.json",
          "expected_results_dir": "ExpectedResults/3/1.no_map",
@@ -63,7 +63,7 @@
         }
     },
     {
-        "name": "serial::loading_files_3.2",
+        "name": "serial::distance_matrix_3.2_euclidean",
         "description": "Tests pyProCT  Euclidean Distance Matrix",
         "script": "TestScenarios/3-Distance_Matrix/3.2-Euclidean_distance_matrix/control.json",
         "expected_results_dir": "ExpectedResults/3/2",
@@ -72,7 +72,7 @@
         }
     },
     {
-        "name": "serial::loading_files_3.3.dihedral",
+        "name": "serial::distance_matrix_3.3.dihedral",
         "description": "Tests pyProCT Dihedral Distance Matrix",
         "script": "TestScenarios/3-Distance_Matrix/3.3-Dihedral_RMSD_matrix/control_die.json",
         "expected_results_dir": "ExpectedResults/3/3.dihedral",
@@ -81,7 +81,7 @@
         }
     },
     {
-        "name": "serial::loading_files_3.3.rmsd",
+        "name": "serial::distance_matrix_3.3.rmsd",
         "description": "Tests pyProCT RMSD Distance Matrix",
         "script": "TestScenarios/3-Distance_Matrix/3.3-Dihedral_RMSD_matrix/control_rmsd.json",
         "expected_results_dir": "ExpectedResults/3/3.rmsd",

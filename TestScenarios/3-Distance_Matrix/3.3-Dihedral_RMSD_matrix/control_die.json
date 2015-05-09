@@ -4,8 +4,8 @@
             "scheduler_type": "Serial"
         },
         "workspace": {
-            "base": "clustering",
-            "matrix": "../matrix_dihedrals"
+            "base": "ExpectedResults/3/3.dihedral",
+            "matrix": "matrix_dihedrals"
         }
     },
     "data":{

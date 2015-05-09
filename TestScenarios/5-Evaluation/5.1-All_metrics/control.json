@@ -5,7 +5,7 @@
             "number_of_processes": 6
         },
         "workspace": {
-            "base": "clustering"
+            "base": "ExpectedResults/5/1"
         }
     },
     "data": {

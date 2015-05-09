@@ -5,7 +5,7 @@
             "number_of_processes": 3
         },
         "workspace": {
-            "base": "kmedoids_clustering"
+            "base": "ExpectedResults/4/1-9.kmedoids"
         }
     },
     "data": {

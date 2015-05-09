@@ -5,7 +5,7 @@
             "number_of_processes": 6
         },
         "workspace": {
-            "base": "free_exploration"
+            "base": "ExpectedResults/4/1-9.free-exploration"
         }
     },
     "data": {

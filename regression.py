@@ -55,12 +55,13 @@ if __name__ == "__main__":
     input_file = args[0]
     control_info = json.loads(open(input_file, "r").read())
 
-    print "Options.action = %s" % options.action
+    print "Selected action = %s" % options.action
     # Generate regression tests
     if options.action == "GENERATE":
+        print "Generating Expected Results"
         for test_info in control_info:
+            print "Generating: %s" % test_info["name"]
             stdout_file, stderr_file = execute_pyproct(test_info["script"])
-            print "STDOUT: \n%s" % stdout_file
             script = json.loads(tools.remove_comments(open(test_info["script"], "r").read()))
             workspace = script["global"]["workspace"]
             s_tools.create_directory(test_info["expected_results_dir"])
@@ -72,10 +73,11 @@ if __name__ == "__main__":
                     os.system("mv %s %s"%(os.path.join(workspace["base"],subpath,file),
                                                        test_info["expected_results_dir"]))
 
-            clean(workspace)
+            # clean(workspace)
 
     # Execute regression tests
     elif options.action == "TEST":
+        print "Testing results against Expected Results dir"
         log_handler = open(options.log_file,"w")
 
         global_test_outcome = True
@@ -85,7 +87,7 @@ if __name__ == "__main__":
 
             try:
                 stdout_file, stderr_file = execute_pyproct(test_info["script"])
-                print "STDOUT: \n%s" % stdout_file
+                print "Testing: %s" % test_info["name"]
                 script = json.loads(tools.remove_comments(open(test_info["script"], "r").read()))
                 workspace = script["global"]["workspace"]
 

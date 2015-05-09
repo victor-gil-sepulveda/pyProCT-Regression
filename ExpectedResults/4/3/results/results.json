@@ -981,31 +981,31 @@
     "timing": [
         {
             "name": "Global",
-            "elapsed": 1.057197093963623
+            "elapsed": 0.6593079566955566
         },
         {
             "name": "Clustering Section",
-            "elapsed": 0.06829094886779785
+            "elapsed": 0.03809094429016113
         },
         {
             "name": "Clustering Exploration",
-            "elapsed": 0.063385009765625
+            "elapsed": 0.035735130310058594
         },
         {
             "name": "Clustering Filtering",
-            "elapsed": 0.003361940383911133
+            "elapsed": 0.0015070438385009766
         },
         {
             "name": "Evaluation",
-            "elapsed": 0.0012390613555908203
+            "elapsed": 0.0006608963012695312
         },
         {
             "name": "Selection",
-            "elapsed": 0.0002319812774658203
+            "elapsed": 0.00014400482177734375
         },
         {
             "name": "Postprocessing",
-            "elapsed": 0.42780184745788574
+            "elapsed": 0.2524888515472412
         }
     ]
 }

@@ -119,7 +119,7 @@ if __name__ == "__main__":
             global_test_outcome = test_outcome and global_test_outcome
 
         log_handler.close()
-        clean(workspace)
+        # clean(workspace)
 
         if global_test_outcome == True:
             print "All tests are OK"

@@ -111,31 +111,31 @@
     "timing": [
         {
             "name": "Global",
-            "elapsed": 43.18546485900879
+            "elapsed": 30.2327299118042
         },
         {
             "name": "Clustering Section",
-            "elapsed": 3.2765848636627197
+            "elapsed": 2.0759968757629395
         },
         {
             "name": "Clustering Exploration",
-            "elapsed": 0.24780607223510742
+            "elapsed": 0.16987204551696777
         },
         {
             "name": "Clustering Filtering",
-            "elapsed": 0.00021004676818847656
+            "elapsed": 7.486343383789062e-05
         },
         {
             "name": "Evaluation",
-            "elapsed": 3.0281920433044434
+            "elapsed": 1.9052939414978027
         },
         {
             "name": "Selection",
-            "elapsed": 0.000263214111328125
+            "elapsed": 0.0006220340728759766
         },
         {
             "name": "Postprocessing",
-            "elapsed": 36.43622398376465
+            "elapsed": 25.83056902885437
         }
     ]
 }

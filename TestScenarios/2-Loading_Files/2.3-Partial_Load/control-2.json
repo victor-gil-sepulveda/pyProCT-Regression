@@ -4,24 +4,24 @@
             "scheduler_type": "Serial"
         },
         "workspace": {
-            "base": "clustering"
+            "base": "ExpectedResults/2/3.2"
         }
     },
     "data":{
         "type": "pdb_ensemble",
-        
+
         "files":[
             {
-                "file":"Structures/0030429999.pdb",
+                "file":"Data/files/0030429999.pdb",
                 "base_selection": "resnum 3to53"
-            
+
             },
             {
-                "file":"Structures/N_000_1140.pdb",
+                "file":"Data/files/N_000_1140.pdb",
                 "base_selection": "resnum 3to53"
             }
         ],
-            
+
         "matrix":{
             "method": "rmsd",
             "parameters": {

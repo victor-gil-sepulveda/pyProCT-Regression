@@ -1,0 +1,36 @@
+{
+    "global": {
+        "control": {
+            "scheduler_type": "Serial"
+        },
+        "workspace": {
+            "tmp": "tmp",
+            "matrix": "matrix_rmsd",
+            "parameters": {
+                "clear_after_exec": [
+                    "tmp"
+                ],
+                "overwrite": true
+            },
+            "results": "results",
+            "base": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/3/3.rmsd",
+            "clusters": "clusters"
+        }
+    },
+    "data": {
+        "files": [
+            "Data/files/3.3.conformations.lst"
+        ],
+        "type": "protein::ensemble",
+        "matrix": {
+            "image": {
+                "filename": "matrix_plot"
+            },
+            "method": "rmsd::ensemble",
+            "parameters": {
+                "type": "COORDINATES",
+                "fit_selection": "backbone"
+            }
+        }
+    }
+}

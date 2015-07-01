@@ -4,17 +4,17 @@
             "scheduler_type": "Serial"
         },
         "workspace": {
-            "base": "clustering",
-            "matrix": "../matrix_rmsd"
+            "base": "ExpectedResults/3/3.rmsd",
+            "matrix": "matrix_rmsd"
         }
     },
     "data":{
         "type": "protein::ensemble",
-        
+
         "files":[
-            "Structures/conformations.lst"
+            "Data/files/3.3.conformations.lst"
 	],
-            
+
         "matrix":{
             "method": "rmsd::ensemble",
             "parameters": {

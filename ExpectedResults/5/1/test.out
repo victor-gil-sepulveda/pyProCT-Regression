@@ -1,0 +1,137 @@
+{
+    "clustering": {
+        "generation": {
+            "method": "generate"
+        },
+        "evaluation": {
+            "minimum_cluster_size": 1,
+            "maximum_noise": 0,
+            "evaluation_criteria": {
+                "criteria_0": {
+                    "Cohesion": {
+                        "action": ">",
+                        "weight": 1
+                    }
+                }
+            },
+            "query_types": [
+                "NumClusters",
+                "NoiseLevel",
+                "MeanClusterSize",
+                "Details",
+                "NumClusteredElems",
+                "PercentInTop4",
+                "PercentInTop",
+                "ClustersTo90",
+                "Cohesion",
+                "Compactness",
+                "Separation",
+                "Silhouette",
+                "GaussianSeparation",
+                "Calinski-Harabasz",
+                "Dunn",
+                "Davies-Bouldin",
+                "RatioCut",
+                "NCut",
+                "MinMaxCut",
+                "PCAanalysis"
+            ],
+            "maximum_clusters": 10,
+            "minimum_clusters": 1
+        },
+        "algorithms": {
+            "kmedoids": {
+                "max": 15,
+                "parameters": [
+                    {
+                        "k": 4
+                    }
+                ]
+            }
+        }
+    },
+    "global": {
+        "control": {
+            "number_of_processes": 6,
+            "scheduler_type": "Process/Parallel"
+        },
+        "workspace": {
+            "base": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/5/1"
+        }
+    },
+    "data": {
+        "files": [
+            "Data/files/9_natural_clusters.pdb"
+        ],
+        "type": "protein::ensemble",
+        "matrix": {
+            "method": "rmsd::ensemble",
+            "parameters": {
+                "calculator_type": "QCP_OMP_CALCULATOR",
+                "fit_selection": "name CA"
+            }
+        }
+    },
+    "postprocess": {
+        "pdb_clusters": {
+            "add_source_details": true,
+            "keep_remarks": "ALL"
+        },
+        "cluster_stats": {},
+        "representatives": {
+            "add_source_details": true,
+            "keep_remarks": "ALL"
+        }
+    }
+}
+Inflate source list = ['Data/files/9_natural_clusters.pdb']
+Do_glob [path] : Data/files/9_natural_clusters.pdb
+Returning paths
+900 conformations of 1231 atoms were read.
+Calculating statistics ...
+PCA finished
+=======================
+Summary:
+--------
+- 1 clusterings were generated.
+- Chosen cluster:
+	- Used algorithm:  kmedoids
+	- Number of clusters:  4
+	- Mean cluster size:  225.0
+	- Noise: 0.00 %
+	- Quality function results: 
+Type[<type 'float'>], Value[4.85633995796e-44]
+		- RatioCut: 4.85633995796e-44
+Type[<type 'numpy.float64'>], Value[0.44943167818]
+		- Silhouette: 0.44943167818
+Type[<type 'numpy.float64'>], Value[0.0287467348677]
+		- Dunn: 0.0287467348677
+Type[<type 'float'>], Value[1.50689750904e-45]
+		- MinMaxCut: 1.50689750904e-45
+Type[<type 'int'>], Value[4]
+		- Clusters to 90: 4
+Type[<type 'float'>], Value[55.5555555556]
+		- Percent in top cluster: 55.5555555556
+Type[<type 'float'>], Value[0.484265928228]
+		- Cohesion: 0.484265928228
+Type[<type 'str'>], Value[K-Medoids algorithm with k =4 and EQUIDISTANT initial seeding]
+		- Details: K-Medoids algorithm with k =4 and EQUIDISTANT initial seeding
+Type[<type 'numpy.float64'>], Value[9.97867485237]
+		- PCAanalysis: 9.97867485237
+Type[<type 'numpy.float64'>], Value[0.0]
+		- GaussianSeparation: 0.0
+Type[<type 'int'>], Value[900]
+		- Number of clustered elements: 900
+Type[<type 'float'>], Value[7.53448754522e-46]
+		- NCut: 7.53448754522e-46
+Type[<type 'float'>], Value[58413.8587745]
+		- Separation: 58413.8587745
+Type[<type 'numpy.float64'>], Value[0.423160421786]
+		- Davies-Bouldin: 0.423160421786
+Type[<type 'numpy.float64'>], Value[535.694170182]
+		- Calinski-Harabasz: 535.694170182
+Type[<type 'float'>], Value[100.0]
+		- Percent in top 4 clusters: 100.0
+Type[<type 'numpy.float64'>], Value[0.402523471978]
+		- Compactness: 0.402523471978
+=======================

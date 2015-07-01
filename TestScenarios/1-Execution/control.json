@@ -8,7 +8,7 @@ Workspace and scheduler creation.
             "scheduler_type": "Serial"
         },
         "workspace": {
-            "base": "clustering"
+            "base": "ExpectedResults/1"
             // All folders can be specified
             // ,
             // "tmp": "tmp",

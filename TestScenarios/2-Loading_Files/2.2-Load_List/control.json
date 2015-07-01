@@ -4,14 +4,14 @@
             "scheduler_type": "Serial"
         },
         "workspace": {
-            "base": "clustering"
+            "base": "ExpectedResults/2/2"
         }
     },
     "data":{
         "type": "protein::ensemble",
-        
-        "files":["structures.list"],
-            
+
+        "files":["Data/files/2.2.load_list.lst"],
+
         "matrix":{
             "method": "rmsd::ensemble",
             "parameters": {

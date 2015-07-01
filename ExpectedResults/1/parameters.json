@@ -6,14 +6,14 @@
         "workspace": {
             "tmp": "tmp",
             "matrix": "matrix",
-            "parameters": { //jarl
+            "parameters": {
                 "clear_after_exec": [
                     "tmp"
                 ],
                 "overwrite": true
             },
             "results": "results",
-            "base": "/home/victor/Escritorio/pyProCT-Regression/clustering",
+            "base": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/1",
             "clusters": "clusters"
         }
     }

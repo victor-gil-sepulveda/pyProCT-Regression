@@ -4,19 +4,18 @@
             "scheduler_type": "Serial"
         },
         "workspace": {
-            "base": "clustering"
+            "base": "ExpectedResults/2/3.1"
         }
     },
     "data":{
-        "type": "pdb_ensemble",
-        
+        "type": "protein::ensemble",
+
         "files":[
-            "Structures/0030429999.pdb",
-            "Structures/N_000_1140.pdb"
+            "Data/files/0030429999.pdb"
         ],
-            
+
         "matrix":{
-            "method": "rmsd",
+            "method": "rmsd::ensemble",
             "parameters": {
                 "calculator_type": "QCP_OMP_CALCULATOR",
                 "fit_selection": "backbone"

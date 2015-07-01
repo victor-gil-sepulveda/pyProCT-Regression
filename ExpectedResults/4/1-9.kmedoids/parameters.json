@@ -1,0 +1,92 @@
+{
+    "clustering": {
+        "generation": {
+            "method": "generate"
+        },
+        "evaluation": {
+            "minimum_cluster_size": 20,
+            "maximum_noise": 0,
+            "evaluation_criteria": {
+                "criteria_0": {
+                    "Cohesion": {
+                        "action": ">",
+                        "weight": 2
+                    },
+                    "Silhouette": {
+                        "action": ">",
+                        "weight": 3
+                    }
+                }
+            },
+            "query_types": [
+                "NumClusters",
+                "NoiseLevel",
+                "MeanClusterSize"
+            ],
+            "maximum_clusters": 50,
+            "minimum_clusters": 1
+        },
+        "algorithms": {
+            "kmedoids": {
+                "parameters": [
+                    {
+                        "k": 4
+                    },
+                    {
+                        "k": 5
+                    },
+                    {
+                        "k": 6
+                    }
+                ]
+            }
+        }
+    },
+    "global": {
+        "control": {
+            "number_of_processes": 3,
+            "scheduler_type": "Process/Parallel"
+        },
+        "workspace": {
+            "tmp": "tmp",
+            "matrix": "matrix",
+            "parameters": {
+                "clear_after_exec": [
+                    "tmp"
+                ],
+                "overwrite": true
+            },
+            "results": "results",
+            "base": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/1-9.kmedoids",
+            "clusters": "clusters"
+        }
+    },
+    "data": {
+        "files": [
+            "Data/files/9_natural_clusters.pdb"
+        ],
+        "type": "protein::ensemble",
+        "matrix": {
+            "image": {
+                "filename": "matrix_plot"
+            },
+            "method": "rmsd::ensemble",
+            "parameters": {
+                "calculator_type": "QCP_OMP_CALCULATOR",
+                "fit_selection": "name CA"
+            }
+        }
+    },
+    "postprocess": {
+        "pdb_clusters": {
+            "keep_remarks": false,
+            "keep_frame_number": true
+        },
+        "cluster_stats": {},
+        "rmsf": {},
+        "representatives": {
+            "keep_remarks": true,
+            "keep_frame_number": false
+        }
+    }
+}

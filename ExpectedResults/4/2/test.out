@@ -1,0 +1,101 @@
+{
+    "clustering": {
+        "generation": {
+            "method": "generate"
+        },
+        "evaluation": {
+            "minimum_cluster_size": 5,
+            "maximum_noise": 0,
+            "evaluation_criteria": {
+                "criteria_0": {
+                    "Cohesion": {
+                        "action": ">",
+                        "weight": 2
+                    },
+                    "Silhouette": {
+                        "action": ">",
+                        "weight": 3
+                    }
+                }
+            },
+            "query_types": [
+                "NumClusters",
+                "NoiseLevel",
+                "MeanClusterSize"
+            ],
+            "maximum_clusters": 15,
+            "minimum_clusters": 3
+        },
+        "algorithms": {
+            "spectral": {},
+            "kmedoids": {},
+            "hierarchical": {},
+            "dbscan": {},
+            "gromos": {}
+        }
+    },
+    "global": {
+        "control": {
+            "scheduler_type": "Serial"
+        },
+        "workspace": {
+            "base": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/2"
+        }
+    },
+    "data": {
+        "files": [
+            "Data/files/1_100.benzamidine.pdb"
+        ],
+        "type": "protein::ensemble",
+        "matrix": {
+            "image": {
+                "filename": "matrix_plot"
+            },
+            "method": "euclidean_distance::ensemble",
+            "parameters": {
+                "calculator_type": "QCP_OMP_CALCULATOR",
+                "body_selection": "resname XI7",
+                "fit_selection": "name CA"
+            }
+        }
+    },
+    "postprocess": {
+        "pdb_clusters": {
+            "keep_remarks": false,
+            "keep_frame_number": true
+        },
+        "cluster_stats": {},
+        "representatives": {
+            "keep_remarks": true,
+            "keep_frame_number": false
+        },
+        "centers_and_trace": {}
+    }
+}
+Inflate source list = ['Data/files/1_100.benzamidine.pdb']
+Do_glob [path] : Data/files/1_100.benzamidine.pdb
+Returning paths
+101 conformations of 3072 atoms were read.
+using coords
+Calculating statistics ...
+Initializing Spectral clustering. This may take some time ...
+Generating params for spectral
+Generating params for kmedoids
+Generating params for hierarchical
+Generating params for dbscan
+Generating params for gromos
+=======================
+Summary:
+--------
+- 57 clusterings were generated.
+- Chosen cluster:
+	- Used algorithm:  kmedoids
+	- Number of clusters:  11
+	- Mean cluster size:  9.18181818182
+	- Noise: 0.00 %
+	- Quality function results: 
+Type[<type 'numpy.float64'>], Value[0.499785370143]
+		- Silhouette: 0.499785370143
+Type[<type 'float'>], Value[0.772869382843]
+		- Cohesion: 0.772869382843
+=======================

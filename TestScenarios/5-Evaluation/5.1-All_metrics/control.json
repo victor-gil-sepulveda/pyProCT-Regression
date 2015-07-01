@@ -5,13 +5,13 @@
             "number_of_processes": 6
         },
         "workspace": {
-            "base": "clustering"
+            "base": "ExpectedResults/5/1"
         }
     },
     "data": {
         "type": "protein::ensemble",
         "files": [
-                "/home/victor/Escritorio/pyProCT-Regression/Data/files/00219?.pdb"
+                "Data/files/9_natural_clusters.pdb"
         ],
         "matrix": {
             "method": "rmsd::ensemble",

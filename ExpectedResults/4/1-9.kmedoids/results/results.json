@@ -1,0 +1,236 @@
+{
+    "best_clustering": "clustering_0002",
+    "created_files": [
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/1-9.kmedoids/results/parameters.json",
+            "type": "text",
+            "description": "Parameters file"
+        },
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/1-9.kmedoids/matrix/statistics.json",
+            "type": "text",
+            "description": "Matrix statistics"
+        },
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/1-9.kmedoids/matrix/matrix_plot",
+            "type": "image",
+            "description": "Matrix image"
+        },
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/1-9.kmedoids/results/per_cluster_stats.csv",
+            "type": "text",
+            "description": "Stats for all clusterings (diameter and distances from center)"
+        },
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/1-9.kmedoids/results/clusters.tar.gz",
+            "type": "compressed_pdb",
+            "description": "Clusters"
+        },
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/1-9.kmedoids/results/representatives.pdb",
+            "type": "pdb",
+            "description": "Cluster representatives"
+        },
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/1-9.kmedoids/results/CA_displacements.json",
+            "type": "text",
+            "description": "Alpha Carbon mean square displacements"
+        },
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/1-9.kmedoids/results/results.json",
+            "type": "text",
+            "description": "Results file"
+        }
+    ],
+    "selected": {
+        "clustering_0002": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 652,
+                        "elements": "100:199, 400:499, 600:699",
+                        "id": "cluster_4"
+                    },
+                    {
+                        "prototype": 384,
+                        "elements": "300:399, 700:799",
+                        "id": "cluster_2"
+                    },
+                    {
+                        "prototype": 76,
+                        "elements": "0:99",
+                        "id": "cluster_0"
+                    },
+                    {
+                        "prototype": 244,
+                        "elements": "200:299",
+                        "id": "cluster_1"
+                    },
+                    {
+                        "prototype": 559,
+                        "elements": "500:599",
+                        "id": "cluster_3"
+                    },
+                    {
+                        "prototype": 834,
+                        "elements": "800:899",
+                        "id": "cluster_5"
+                    }
+                ],
+                "total_number_of_elements": 900,
+                "number_of_clusters": 6
+            },
+            "evaluation": {
+                "Silhouette": 0.55035393233809282,
+                "Noise level": 0.0,
+                "Normalized_Silhouette": 1.0,
+                "Cohesion": 0.6580122941053412,
+                "Mean cluster size": 150.0,
+                "Number of clusters": 6,
+                "Normalized_Cohesion": 1.0
+            },
+            "type": "kmedoids",
+            "parameters": {
+                "k": 6
+            }
+        },
+        "clustering_0000": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 300,
+                        "elements": "300:699, 800:899",
+                        "id": "cluster_2"
+                    },
+                    {
+                        "prototype": 100,
+                        "elements": "100:299",
+                        "id": "cluster_1"
+                    },
+                    {
+                        "prototype": 0,
+                        "elements": "0:99",
+                        "id": "cluster_0"
+                    },
+                    {
+                        "prototype": 700,
+                        "elements": "700:799",
+                        "id": "cluster_3"
+                    }
+                ],
+                "total_number_of_elements": 900,
+                "number_of_clusters": 4
+            },
+            "evaluation": {
+                "Silhouette": 0.44943167817962787,
+                "Noise level": 0.0,
+                "Normalized_Silhouette": 0.0,
+                "Cohesion": 0.48426592822847025,
+                "Mean cluster size": 225.0,
+                "Number of clusters": 4,
+                "Normalized_Cohesion": 0.0
+            },
+            "type": "kmedoids",
+            "parameters": {
+                "k": 4
+            }
+        },
+        "clustering_0001": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 300,
+                        "elements": "300:399, 500:599, 700:799",
+                        "id": "cluster_2"
+                    },
+                    {
+                        "prototype": 100,
+                        "elements": "100:199, 400:499, 600:699",
+                        "id": "cluster_3"
+                    },
+                    {
+                        "prototype": 0,
+                        "elements": "0:99",
+                        "id": "cluster_0"
+                    },
+                    {
+                        "prototype": 200,
+                        "elements": "200:299",
+                        "id": "cluster_1"
+                    },
+                    {
+                        "prototype": 800,
+                        "elements": "800:899",
+                        "id": "cluster_4"
+                    }
+                ],
+                "total_number_of_elements": 900,
+                "number_of_clusters": 5
+            },
+            "evaluation": {
+                "Silhouette": 0.52904019804334734,
+                "Noise level": 0.0,
+                "Normalized_Silhouette": 0.78881036226876855,
+                "Cohesion": 0.5929872098682474,
+                "Mean cluster size": 180.0,
+                "Number of clusters": 5,
+                "Normalized_Cohesion": 0.62574708306028537
+            },
+            "type": "kmedoids",
+            "parameters": {
+                "k": 5
+            }
+        }
+    },
+    "not_selected": {},
+    "source_files": [
+        {
+            "source": "Data/files/9_natural_clusters.pdb",
+            "number_of_conformations": 900,
+            "number_of_atoms": 1231
+        }
+    ],
+    "workspace": {
+        "tmp": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/1-9.kmedoids/tmp",
+        "clusters": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/1-9.kmedoids/clusters",
+        "results": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/1-9.kmedoids/results",
+        "matrix": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/1-9.kmedoids/matrix"
+    },
+    "scores": {
+        "criteria_0": {
+            "clustering_0002": 1.0,
+            "clustering_0000": 0.0,
+            "clustering_0001": 0.72358505058537526
+        }
+    },
+    "timing": [
+        {
+            "name": "Global",
+            "elapsed": 26.156511068344116
+        },
+        {
+            "name": "Clustering Section",
+            "elapsed": 0.6909830570220947
+        },
+        {
+            "name": "Clustering Exploration",
+            "elapsed": 0.2507138252258301
+        },
+        {
+            "name": "Clustering Filtering",
+            "elapsed": 0.0059239864349365234
+        },
+        {
+            "name": "Evaluation",
+            "elapsed": 0.4333341121673584
+        },
+        {
+            "name": "Selection",
+            "elapsed": 0.0008342266082763672
+        },
+        {
+            "name": "Postprocessing",
+            "elapsed": 22.169343948364258
+        }
+    ]
+}

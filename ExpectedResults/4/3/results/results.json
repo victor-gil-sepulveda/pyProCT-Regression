@@ -1,0 +1,1011 @@
+{
+    "best_clustering": "clustering_0018",
+    "created_files": [
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/3/results/parameters.json",
+            "type": "text",
+            "description": "Parameters file"
+        },
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/3/matrix/statistics.json",
+            "type": "text",
+            "description": "Matrix statistics"
+        },
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/3/matrix/matrix_plot",
+            "type": "image",
+            "description": "Matrix image"
+        },
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/3/results/per_cluster_stats.csv",
+            "type": "text",
+            "description": "Stats for all clusterings (diameter and distances from center)"
+        },
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/3/results/clusters.tar.gz",
+            "type": "compressed_pdb",
+            "description": "Clusters"
+        },
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/3/results/atomic_distances.csv",
+            "type": "csv",
+            "description": "Atom distances file"
+        },
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/3/results/representatives.pdb",
+            "type": "pdb",
+            "description": "Cluster representatives"
+        },
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/3/results/CA_displacements.json",
+            "type": "text",
+            "description": "Alpha Carbon mean square displacements"
+        },
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/3/results/results.json",
+            "type": "text",
+            "description": "Results file"
+        }
+    ],
+    "selected": {
+        "clustering_0018": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 2,
+                        "elements": "2:3",
+                        "id": "cluster_0"
+                    },
+                    {
+                        "prototype": 0,
+                        "elements": "0",
+                        "id": "cluster_1"
+                    },
+                    {
+                        "prototype": 1,
+                        "elements": "1",
+                        "id": "cluster_2"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 3
+            },
+            "evaluation": {
+                "Silhouette": 0.94595667996224952,
+                "Noise level": 0.0,
+                "Normalized_Silhouette": 1.0,
+                "Cohesion": 0.9769861373311427,
+                "Mean cluster size": 1.3333333333333333,
+                "Number of clusters": 3,
+                "Normalized_Cohesion": 1.0
+            },
+            "type": "gromos",
+            "parameters": {
+                "cutoff": 8.2262181599934898
+            }
+        },
+        "clustering_0028": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 1,
+                        "elements": "1:3",
+                        "id": "cluster_0"
+                    },
+                    {
+                        "prototype": 0,
+                        "elements": "0",
+                        "id": "cluster_1"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 2
+            },
+            "evaluation": {
+                "Silhouette": 0.62344622451107934,
+                "Noise level": 0.0,
+                "Normalized_Silhouette": 0.65906424439643396,
+                "Cohesion": 0.5534746944660329,
+                "Mean cluster size": 2.0,
+                "Number of clusters": 2,
+                "Normalized_Cohesion": 0.56651233146252566
+            },
+            "type": "gromos",
+            "parameters": {
+                "cutoff": 28.791763559977223
+            }
+        },
+        "clustering_0001": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 0,
+                        "elements": "0:3",
+                        "id": "cluster_0"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 1
+            },
+            "evaluation": {
+                "Silhouette": 0.0,
+                "Noise level": 0.0,
+                "Normalized_Silhouette": 0.0,
+                "Cohesion": 0.0,
+                "Mean cluster size": 4.0,
+                "Number of clusters": 1,
+                "Normalized_Cohesion": 0.0
+            },
+            "type": "kmedoids",
+            "parameters": {
+                "seeding_type": "EQUIDISTANT",
+                "k": 5,
+                "seeding_max_cutoff": null
+            }
+        }
+    },
+    "not_selected": {
+        "clustering_0024": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 2,
+                        "elements": "2:3",
+                        "id": "cluster_0"
+                    },
+                    {
+                        "prototype": 0,
+                        "elements": "0",
+                        "id": "cluster_1"
+                    },
+                    {
+                        "prototype": 1,
+                        "elements": "1",
+                        "id": "cluster_2"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 3
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0025"
+                    }
+                }
+            ],
+            "type": "gromos",
+            "parameters": {
+                "cutoff": 20.56554539998373
+            }
+        },
+        "clustering_0025": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 2,
+                        "elements": "2:3",
+                        "id": "cluster_0"
+                    },
+                    {
+                        "prototype": 0,
+                        "elements": "0",
+                        "id": "cluster_1"
+                    },
+                    {
+                        "prototype": 1,
+                        "elements": "1",
+                        "id": "cluster_2"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 3
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0020"
+                    }
+                }
+            ],
+            "type": "gromos",
+            "parameters": {
+                "cutoff": 22.622099939982103
+            }
+        },
+        "clustering_0026": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 2,
+                        "elements": "1:3",
+                        "id": "cluster_0"
+                    },
+                    {
+                        "prototype": 0,
+                        "elements": "0",
+                        "id": "cluster_1"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 2
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0027"
+                    }
+                }
+            ],
+            "type": "gromos",
+            "parameters": {
+                "cutoff": 24.678654479980477
+            }
+        },
+        "clustering_0027": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 1,
+                        "elements": "1:3",
+                        "id": "cluster_0"
+                    },
+                    {
+                        "prototype": 0,
+                        "elements": "0",
+                        "id": "cluster_1"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 2
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0028"
+                    }
+                }
+            ],
+            "type": "gromos",
+            "parameters": {
+                "cutoff": 26.73520901997885
+            }
+        },
+        "clustering_0020": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 2,
+                        "elements": "2:3",
+                        "id": "cluster_0"
+                    },
+                    {
+                        "prototype": 0,
+                        "elements": "0",
+                        "id": "cluster_1"
+                    },
+                    {
+                        "prototype": 1,
+                        "elements": "1",
+                        "id": "cluster_2"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 3
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0021"
+                    }
+                }
+            ],
+            "type": "gromos",
+            "parameters": {
+                "cutoff": 12.339327239990237
+            }
+        },
+        "clustering_0021": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 2,
+                        "elements": "2:3",
+                        "id": "cluster_0"
+                    },
+                    {
+                        "prototype": 0,
+                        "elements": "0",
+                        "id": "cluster_1"
+                    },
+                    {
+                        "prototype": 1,
+                        "elements": "1",
+                        "id": "cluster_2"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 3
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0022"
+                    }
+                }
+            ],
+            "type": "gromos",
+            "parameters": {
+                "cutoff": 14.39588177998861
+            }
+        },
+        "clustering_0022": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 2,
+                        "elements": "2:3",
+                        "id": "cluster_0"
+                    },
+                    {
+                        "prototype": 0,
+                        "elements": "0",
+                        "id": "cluster_1"
+                    },
+                    {
+                        "prototype": 1,
+                        "elements": "1",
+                        "id": "cluster_2"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 3
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0023"
+                    }
+                }
+            ],
+            "type": "gromos",
+            "parameters": {
+                "cutoff": 16.452436319986983
+            }
+        },
+        "clustering_0023": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 2,
+                        "elements": "2:3",
+                        "id": "cluster_0"
+                    },
+                    {
+                        "prototype": 0,
+                        "elements": "0",
+                        "id": "cluster_1"
+                    },
+                    {
+                        "prototype": 1,
+                        "elements": "1",
+                        "id": "cluster_2"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 3
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0013"
+                    }
+                }
+            ],
+            "type": "gromos",
+            "parameters": {
+                "cutoff": 18.508990859985357
+            }
+        },
+        "clustering_0011": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 0,
+                        "elements": "0:3",
+                        "id": "cluster_0"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 1
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0010"
+                    }
+                }
+            ],
+            "type": "kmedoids",
+            "parameters": {
+                "seeding_type": "EQUIDISTANT",
+                "k": 45,
+                "seeding_max_cutoff": null
+            }
+        },
+        "clustering_0010": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 0,
+                        "elements": "0:3",
+                        "id": "cluster_0"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 1
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0012"
+                    }
+                }
+            ],
+            "type": "kmedoids",
+            "parameters": {
+                "seeding_type": "EQUIDISTANT",
+                "k": 41,
+                "seeding_max_cutoff": null
+            }
+        },
+        "clustering_0013": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 2,
+                        "elements": "2:3",
+                        "id": "cluster_0"
+                    },
+                    {
+                        "prototype": 1,
+                        "elements": "1",
+                        "id": "cluster_1"
+                    },
+                    {
+                        "prototype": 0,
+                        "elements": "0",
+                        "id": "cluster_2"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 3
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0015"
+                    }
+                }
+            ],
+            "type": "hierarchical",
+            "parameters": {
+                "cutoff": 0.6296598106622696,
+                "method": "complete"
+            }
+        },
+        "clustering_0012": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 0,
+                        "elements": "0:3",
+                        "id": "cluster_0"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 1
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0008"
+                    }
+                }
+            ],
+            "type": "kmedoids",
+            "parameters": {
+                "seeding_type": "EQUIDISTANT",
+                "k": 49,
+                "seeding_max_cutoff": null
+            }
+        },
+        "clustering_0015": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 2,
+                        "elements": "2:3",
+                        "id": "cluster_0"
+                    },
+                    {
+                        "prototype": 0,
+                        "elements": "0",
+                        "id": "cluster_1"
+                    },
+                    {
+                        "prototype": 1,
+                        "elements": "1",
+                        "id": "cluster_2"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 3
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0017"
+                    }
+                }
+            ],
+            "type": "gromos",
+            "parameters": {
+                "cutoff": 2.0565545399983725
+            }
+        },
+        "clustering_0014": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 1,
+                        "elements": "1:3",
+                        "id": "cluster_0"
+                    }
+                ],
+                "total_number_of_elements": 3,
+                "number_of_clusters": 1
+            },
+            "reasons": [
+                {
+                    "reason": "TOO_MUCH_NOISE",
+                    "data": {
+                        "current": 25.0,
+                        "maximum": 0
+                    }
+                }
+            ],
+            "type": "dbscan",
+            "parameters": {
+                "eps": 26.099658966064453,
+                "minpts": 1.0
+            }
+        },
+        "clustering_0017": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 2,
+                        "elements": "2:3",
+                        "id": "cluster_0"
+                    },
+                    {
+                        "prototype": 0,
+                        "elements": "0",
+                        "id": "cluster_1"
+                    },
+                    {
+                        "prototype": 1,
+                        "elements": "1",
+                        "id": "cluster_2"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 3
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0016"
+                    }
+                }
+            ],
+            "type": "gromos",
+            "parameters": {
+                "cutoff": 6.1696636199951174
+            }
+        },
+        "clustering_0016": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 2,
+                        "elements": "2:3",
+                        "id": "cluster_0"
+                    },
+                    {
+                        "prototype": 0,
+                        "elements": "0",
+                        "id": "cluster_1"
+                    },
+                    {
+                        "prototype": 1,
+                        "elements": "1",
+                        "id": "cluster_2"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 3
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0019"
+                    }
+                }
+            ],
+            "type": "gromos",
+            "parameters": {
+                "cutoff": 4.1131090799967449
+            }
+        },
+        "clustering_0019": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 2,
+                        "elements": "2:3",
+                        "id": "cluster_0"
+                    },
+                    {
+                        "prototype": 0,
+                        "elements": "0",
+                        "id": "cluster_1"
+                    },
+                    {
+                        "prototype": 1,
+                        "elements": "1",
+                        "id": "cluster_2"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 3
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0018"
+                    }
+                }
+            ],
+            "type": "gromos",
+            "parameters": {
+                "cutoff": 10.282772699991863
+            }
+        },
+        "clustering_0008": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 0,
+                        "elements": "0:3",
+                        "id": "cluster_0"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 1
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0009"
+                    }
+                }
+            ],
+            "type": "kmedoids",
+            "parameters": {
+                "seeding_type": "EQUIDISTANT",
+                "k": 33,
+                "seeding_max_cutoff": null
+            }
+        },
+        "clustering_0009": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 0,
+                        "elements": "0:3",
+                        "id": "cluster_0"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 1
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0006"
+                    }
+                }
+            ],
+            "type": "kmedoids",
+            "parameters": {
+                "seeding_type": "EQUIDISTANT",
+                "k": 37,
+                "seeding_max_cutoff": null
+            }
+        },
+        "clustering_0006": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 0,
+                        "elements": "0:3",
+                        "id": "cluster_0"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 1
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0007"
+                    }
+                }
+            ],
+            "type": "kmedoids",
+            "parameters": {
+                "seeding_type": "EQUIDISTANT",
+                "k": 25,
+                "seeding_max_cutoff": null
+            }
+        },
+        "clustering_0007": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 0,
+                        "elements": "0:3",
+                        "id": "cluster_0"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 1
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0004"
+                    }
+                }
+            ],
+            "type": "kmedoids",
+            "parameters": {
+                "seeding_type": "EQUIDISTANT",
+                "k": 29,
+                "seeding_max_cutoff": null
+            }
+        },
+        "clustering_0004": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 0,
+                        "elements": "0:3",
+                        "id": "cluster_0"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 1
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0005"
+                    }
+                }
+            ],
+            "type": "kmedoids",
+            "parameters": {
+                "seeding_type": "EQUIDISTANT",
+                "k": 17,
+                "seeding_max_cutoff": null
+            }
+        },
+        "clustering_0005": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 0,
+                        "elements": "0:3",
+                        "id": "cluster_0"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 1
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0002"
+                    }
+                }
+            ],
+            "type": "kmedoids",
+            "parameters": {
+                "seeding_type": "EQUIDISTANT",
+                "k": 21,
+                "seeding_max_cutoff": null
+            }
+        },
+        "clustering_0002": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 0,
+                        "elements": "0:3",
+                        "id": "cluster_0"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 1
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0003"
+                    }
+                }
+            ],
+            "type": "kmedoids",
+            "parameters": {
+                "seeding_type": "EQUIDISTANT",
+                "k": 9,
+                "seeding_max_cutoff": null
+            }
+        },
+        "clustering_0003": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 0,
+                        "elements": "0:3",
+                        "id": "cluster_0"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 1
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0000"
+                    }
+                }
+            ],
+            "type": "kmedoids",
+            "parameters": {
+                "seeding_type": "EQUIDISTANT",
+                "k": 13,
+                "seeding_max_cutoff": null
+            }
+        },
+        "clustering_0000": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 0,
+                        "elements": "0:3",
+                        "id": "cluster_0"
+                    }
+                ],
+                "total_number_of_elements": 4,
+                "number_of_clusters": 1
+            },
+            "reasons": [
+                {
+                    "reason": "EQUAL_TO_OTHER_CLUSTERING",
+                    "data": {
+                        "id": "clustering_0001"
+                    }
+                }
+            ],
+            "type": "kmedoids",
+            "parameters": {
+                "seeding_type": "EQUIDISTANT",
+                "k": 1,
+                "seeding_max_cutoff": null
+            }
+        }
+    },
+    "source_files": [
+        {
+            "source": "Data/files/1PPE_7888.pdb",
+            "number_of_conformations": 1,
+            "number_of_atoms": 1849
+        },
+        {
+            "source": "Data/files/1PPE_2386.pdb",
+            "number_of_conformations": 1,
+            "number_of_atoms": 1849
+        },
+        {
+            "source": "Data/files/1PPE_27.pdb",
+            "number_of_conformations": 1,
+            "number_of_atoms": 1849
+        },
+        {
+            "source": "Data/files/1PPE_ref.pdb",
+            "number_of_conformations": 1,
+            "number_of_atoms": 1849
+        }
+    ],
+    "workspace": {
+        "tmp": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/3/tmp",
+        "clusters": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/3/clusters",
+        "results": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/3/results",
+        "matrix": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/4/3/matrix"
+    },
+    "scores": {
+        "criteria_0": {
+            "clustering_0018": 1.0,
+            "clustering_0028": 0.62204347922287062,
+            "clustering_0001": 0.0
+        }
+    },
+    "timing": [
+        {
+            "name": "Global",
+            "elapsed": 0.6593079566955566
+        },
+        {
+            "name": "Clustering Section",
+            "elapsed": 0.03809094429016113
+        },
+        {
+            "name": "Clustering Exploration",
+            "elapsed": 0.035735130310058594
+        },
+        {
+            "name": "Clustering Filtering",
+            "elapsed": 0.0015070438385009766
+        },
+        {
+            "name": "Evaluation",
+            "elapsed": 0.0006608963012695312
+        },
+        {
+            "name": "Selection",
+            "elapsed": 0.00014400482177734375
+        },
+        {
+            "name": "Postprocessing",
+            "elapsed": 0.2524888515472412
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "global": {
+        "control": {
+            "scheduler_type": "Serial"
+        },
+        "workspace": {
+            "base": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/3/2"
+        }
+    },
+    "data": {
+        "files": [
+            "Data/files/1_10.benzamidine.pdb"
+        ],
+        "type": "protein::ensemble",
+        "matrix": {
+            "image": {
+                "filename": "matrix_plot"
+            },
+            "method": "euclidean_distance::ensemble",
+            "parameters": {
+                "calculator_type": "QCP_OMP_CALCULATOR",
+                "body_selection": "resname XI7",
+                "fit_selection": "name CA"
+            },
+            "filename": "matrix"
+        }
+    }
+}
+Inflate source list = ['Data/files/1_10.benzamidine.pdb']
+Do_glob [path] : Data/files/1_10.benzamidine.pdb
+Returning paths
+10 conformations of 3072 atoms were read.
+using coords
+Calculating statistics ...
+[Warning driver::run] 'clustering' object was not defined in the control script. pyProCT will now stop.

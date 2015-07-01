@@ -1,0 +1,141 @@
+{
+    "best_clustering": "clustering_0000",
+    "created_files": [
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/5/1/results/parameters.json",
+            "type": "text",
+            "description": "Parameters file"
+        },
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/5/1/matrix/statistics.json",
+            "type": "text",
+            "description": "Matrix statistics"
+        },
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/5/1/results/per_cluster_stats.csv",
+            "type": "text",
+            "description": "Stats for all clusterings (diameter and distances from center)"
+        },
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/5/1/results/clusters.tar.gz",
+            "type": "compressed_pdb",
+            "description": "Clusters"
+        },
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/5/1/results/representatives.pdb",
+            "type": "pdb",
+            "description": "Cluster representatives"
+        },
+        {
+            "path": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/5/1/results/results.json",
+            "type": "text",
+            "description": "Results file"
+        }
+    ],
+    "selected": {
+        "clustering_0000": {
+            "clustering": {
+                "clusters": [
+                    {
+                        "prototype": 597,
+                        "elements": "300:699, 800:899",
+                        "id": "cluster_2"
+                    },
+                    {
+                        "prototype": 207,
+                        "elements": "100:299",
+                        "id": "cluster_1"
+                    },
+                    {
+                        "prototype": 76,
+                        "elements": "0:99",
+                        "id": "cluster_0"
+                    },
+                    {
+                        "prototype": 792,
+                        "elements": "700:799",
+                        "id": "cluster_3"
+                    }
+                ],
+                "total_number_of_elements": 900,
+                "number_of_clusters": 4
+            },
+            "evaluation": {
+                "RatioCut": 4.856339957964086e-44,
+                "Silhouette": 0.44943167817962787,
+                "Dunn": 0.028746734867732691,
+                "Noise level": 0.0,
+                "Normalized_Cohesion": 1,
+                "MinMaxCut": 1.506897509044479e-45,
+                "Clusters to 90": 4,
+                "Percent in top cluster": 55.55555555555556,
+                "Cohesion": 0.48426592822847025,
+                "Mean cluster size": 225.0,
+                "Number of clusters": 4,
+                "Details": "K-Medoids algorithm with k =4 and EQUIDISTANT initial seeding",
+                "PCAanalysis": 9.9786748523691138,
+                "GaussianSeparation": 0.0,
+                "Number of clustered elements": 900,
+                "NCut": 7.534487545222394e-46,
+                "Separation": 58413.85877452571,
+                "Davies-Bouldin": 0.42316042178611685,
+                "Calinski-Harabasz": 535.69417018160391,
+                "Percent in top 4 clusters": 100.0,
+                "Compactness": 0.40252347197774441
+            },
+            "type": "kmedoids",
+            "parameters": {
+                "k": 4
+            }
+        }
+    },
+    "not_selected": {},
+    "source_files": [
+        {
+            "source": "Data/files/9_natural_clusters.pdb",
+            "number_of_conformations": 900,
+            "number_of_atoms": 1231
+        }
+    ],
+    "workspace": {
+        "tmp": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/5/1/tmp",
+        "clusters": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/5/1/clusters",
+        "results": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/5/1/results",
+        "matrix": "/home/kurtz/xlin/tfg/pyProCT-Regression/ExpectedResults/5/1/matrix"
+    },
+    "scores": {
+        "criteria_0": {
+            "clustering_0000": 1.0
+        }
+    },
+    "timing": [
+        {
+            "name": "Global",
+            "elapsed": 30.2327299118042
+        },
+        {
+            "name": "Clustering Section",
+            "elapsed": 2.0759968757629395
+        },
+        {
+            "name": "Clustering Exploration",
+            "elapsed": 0.16987204551696777
+        },
+        {
+            "name": "Clustering Filtering",
+            "elapsed": 7.486343383789062e-05
+        },
+        {
+            "name": "Evaluation",
+            "elapsed": 1.9052939414978027
+        },
+        {
+            "name": "Selection",
+            "elapsed": 0.0006220340728759766
+        },
+        {
+            "name": "Postprocessing",
+            "elapsed": 25.83056902885437
+        }
+    ]
+}

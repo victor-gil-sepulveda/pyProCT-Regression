@@ -4,7 +4,7 @@
             "scheduler_type": "Serial"
         },
         "workspace": {
-            "base": "clustering",
+            "base": "ExpectedResults/2/1",
             "parameters":{
                 "overwrite":true,
                 "clear_after_exec":["tmp"]
@@ -13,15 +13,15 @@
     },
     "data":{
         "type": "protein::ensemble",
-        
+
         "files":[
-            "Structures/1_T70.10.pdb",
-            "Structures/3_T70.16.pdb",
-            "Structures/5_T70.11.pdb",
-            "Structures/2_T70.15.pdb",
-            "Structures/4_T70.26.pdb",
-            "Structures/6_T70.38.pdb"],
-            
+            "Data/files/1_T70.10.pdb",
+            "Data/files/3_T70.16.pdb",
+            "Data/files/5_T70.11.pdb",
+            "Data/files/2_T70.15.pdb",
+            "Data/files/4_T70.26.pdb",
+            "Data/files/6_T70.38.pdb"],
+
         "matrix":{
             "method": "rmsd::ensemble",
             "parameters": {
